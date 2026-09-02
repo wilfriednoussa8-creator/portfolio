@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Lab — Playground</title>
+<meta name="description" content="Régression linéaire interactive : ajoute des points et observe l'algorithme de Machine Learning calculer la droite de prédiction en direct.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tabler-icons/2.44.0/tabler-icons.min.css">
+
+<link rel="stylesheet" href="../css/main.css">
+<link rel="stylesheet" href="../css/nav.css">
+<link rel="stylesheet" href="../css/playground.css">
+<link rel="stylesheet" href="../css/chatbot.css">
+</head>
+<body>
+
+<nav>
+  <div class="logo">WILFRIED</div>
+
+  <ul class="nav-links">
+    <li><a href="../index.html">Home</a></li>
+    <li><a href="../about.html">About</a></li>
+    <li class="dropdown open">
+      <a href="index.html" class="active">Playground ▾</a>
+      <div class="dropdown-menu">
+        <a href="math-code.html">Math × Code</a>
+        <a href="ai-lab.html" class="active">AI Lab</a>
+        <a href="data-lab.html">Data Lab</a>
+      </div>
+    </li>
+    <li><a href="../projects.html">Projects</a></li>
+    <li><a href="../contact.html">Contact</a></li>
+  </ul>
+
+  <button class="hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="container">
+
+  <header class="module-header">
+    <span class="eyebrow">&gt; playground / ai_lab</span>
+    <h1>AI Lab — Régression linéaire</h1>
+    <p>
+      Clique sur le graphique pour ajouter des points (imagine des ventes historiques),
+      ou génère un jeu de données aléatoire. L'algorithme calcule la droite de régression
+      par moindres carrés en temps réel — le même principe utilisé dans mon app de prévision de stock.
+    </p>
+  </header>
+
+  <div class="playground-layout">
+    <aside class="controls-panel">
+      <h3>&gt; dataset</h3>
+
+      <div class="control-group">
+        <label for="point-count">Nombre de points <span class="value" id="point-count-value">15</span></label>
+        <input type="range" id="point-count" min="3" max="40" step="1" value="15">
+      </div>
+
+      <div class="control-group">
+        <label for="noise-slider">Bruit <span class="value" id="noise-value">1.0</span></label>
+        <input type="range" id="noise-slider" min="0" max="3" step="0.1" value="1">
+      </div>
+
+      <div class="control-buttons">
+        <button class="btn btn-primary" id="generate-btn">Générer</button>
+        <button class="btn btn-secondary" id="clear-btn">Effacer</button>
+      </div>
+
+      <p class="hint-text">💡 Tu peux aussi cliquer directement sur le graphique pour ajouter tes propres points.</p>
+
+      <div class="predict-box">
+        <label for="predict-x">Prédire y pour x =</label>
+        <input type="number" id="predict-x" min="0" max="10" step="0.1" value="5">
+        <div class="predict-result" id="predict-output">—</div>
+      </div>
+    </aside>
+
+    <main class="visualization-panel">
+      <canvas id="ai-canvas"></canvas>
+      <div class="result-line" id="result-line">&gt; en attente de données...</div>
+    </main>
+  </div>
+
+</div>
+
+<script src="../js/main.js"></script>
+<script src="../js/ai-lab.js"></script>
+<script src="../js/chatbot.js"></script>
+</body>
+</html>

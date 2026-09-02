@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects — Noussa Koumbo Wilfried</title>
+<meta name="description" content="Projets freelance de Wilfried : système de gestion universitaire (Django) et application mobile de prévision de ventes (Flutter).">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tabler-icons/2.44.0/tabler-icons.min.css">
+
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/nav.css">
+<link rel="stylesheet" href="css/about.css">
+<link rel="stylesheet" href="css/projects.css">
+<link rel="stylesheet" href="css/chatbot.css">
+</head>
+<body>
+
+<nav>
+  <div class="logo">WILFRIED</div>
+
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li class="dropdown">
+      <a href="playground/index.html">Playground ▾</a>
+      <div class="dropdown-menu">
+        <a href="playground/math-code.html">Math × Code</a>
+        <a href="playground/ai-lab.html">AI Lab</a>
+        <a href="playground/data-lab.html">Data Lab</a>
+      </div>
+    </li>
+    <li><a href="projects.html" class="active">Projects</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+
+  <button class="hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="container">
+
+  <header class="page-header">
+    <span class="eyebrow">&gt; selected_work</span>
+    <h1>Projects</h1>
+  </header>
+
+  <div class="projects-list">
+
+    <!-- PROJET 1 : Système de gestion universitaire -->
+    <div class="project-card">
+      <div class="project-header">
+        <div class="project-title-group">
+          <h3>Système de gestion universitaire</h3>
+        </div>
+        <span class="project-status shipped">✓ Livré — en production</span>
+      </div>
+
+      <p class="project-context">
+        Développé en freelance pour un institut universitaire afin de remplacer des processus
+        administratifs manuels par une plateforme centralisée et fiable.
+      </p>
+
+      <div class="project-tags">
+        <span class="tag">Django</span>
+        <span class="tag">PostgreSQL</span>
+        <span class="tag">MySQL</span>
+        <span class="tag">Bootstrap</span>
+        <span class="tag">Freelance</span>
+      </div>
+
+      <div class="project-features">
+        <h4>Fonctionnalités clés</h4>
+        <ul>
+          <li>Gestion des dossiers étudiants</li>
+          <li>Gestion des enseignants et affectations</li>
+          <li>Suivi des données administratives</li>
+          <li>Interface d'administration sécurisée</li>
+        </ul>
+      </div>
+
+      <div class="project-stack">
+        <div class="stack-item">
+          <span>Backend</span>
+          <strong>Django (Python)</strong>
+        </div>
+        <div class="stack-item">
+          <span>Base de données</span>
+          <strong>PostgreSQL / MySQL</strong>
+        </div>
+        <div class="stack-item">
+          <span>Frontend</span>
+          <strong>Templates Django + Bootstrap</strong>
+        </div>
+      </div>
+    </div>
+
+    <!-- PROJET 2 : App mobile stock + prévision -->
+    <div class="project-card">
+      <div class="project-header">
+        <div class="project-title-group">
+          <h3>Gestion de stock & prévision de ventes</h3>
+        </div>
+        <span class="project-status in-progress">🚧 En développement actif</span>
+      </div>
+
+      <p class="project-context">
+        Application mobile pensée pour aider les commerçants à suivre leur stock et anticiper
+        leurs ventes futures à partir des données historiques. Un projet qui incarne directement
+        ma double casquette : rigueur mathématique et livraison logicielle.
+      </p>
+
+      <div class="project-tags">
+        <span class="tag">Flutter</span>
+        <span class="tag">Python</span>
+        <span class="tag">Régression linéaire</span>
+        <span class="tag">🚧 En cours</span>
+      </div>
+
+      <div class="project-features">
+        <h4>Fonctionnalités clés</h4>
+        <ul>
+          <li>Suivi du stock en temps réel</li>
+          <li>Historique des ventes</li>
+          <li>Prévision de la demande via régression linéaire</li>
+          <li>Interface mobile Flutter</li>
+        </ul>
+      </div>
+
+      <div class="project-stack">
+        <div class="stack-item">
+          <span>Frontend mobile</span>
+          <strong>Flutter (Dart)</strong>
+        </div>
+        <div class="stack-item">
+          <span>Prévision</span>
+          <strong>Python — régression linéaire</strong>
+        </div>
+        <div class="stack-item">
+          <span>API</span>
+          <strong>À définir (REST prévue)</strong>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+<script src="js/main.js"></script>
+<script src="js/chatbot.js"></script>
+</body>
+</html>

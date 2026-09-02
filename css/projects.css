@@ -1,0 +1,140 @@
+/* ============================================
+   PROJECTS PAGE
+   ============================================ */
+.projects-list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding-bottom: 100px;
+}
+
+.project-card {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 36px;
+  transition: all 0.2s ease;
+}
+
+.project-card:hover {
+  border-color: var(--border-strong);
+}
+
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.project-title-group h3 {
+  font-size: 22px;
+  margin-bottom: 6px;
+}
+
+.project-status {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  padding: 5px 12px;
+  border-radius: 20px;
+  white-space: nowrap;
+}
+
+.project-status.shipped {
+  color: var(--green);
+  background: rgba(16, 185, 129, 0.1);
+  border: 1px solid rgba(16, 185, 129, 0.3);
+}
+
+.project-status.in-progress {
+  color: #F59E0B;
+  background: rgba(245, 158, 11, 0.1);
+  border: 1px solid rgba(245, 158, 11, 0.3);
+}
+
+.project-context {
+  font-size: 15px;
+  color: var(--text-secondary);
+  margin-bottom: 20px;
+  max-width: 700px;
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.project-features {
+  margin-bottom: 20px;
+}
+
+.project-features h4 {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--text-secondary);
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.project-features ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.project-features li {
+  font-size: 14px;
+  color: var(--text-secondary);
+  padding-left: 20px;
+  position: relative;
+}
+
+.project-features li::before {
+  content: '▸';
+  color: var(--cyan);
+  position: absolute;
+  left: 0;
+}
+
+.project-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border);
+  font-size: 13px;
+}
+
+.project-stack .stack-item span {
+  font-family: var(--font-mono);
+  color: var(--text-secondary);
+  display: block;
+  margin-bottom: 4px;
+  font-size: 11px;
+  text-transform: uppercase;
+}
+
+.project-stack .stack-item strong {
+  color: var(--text-primary);
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .project-card {
+    padding: 24px;
+  }
+
+  .project-features ul {
+    grid-template-columns: 1fr;
+  }
+
+  .project-stack {
+    flex-direction: column;
+    gap: 12px;
+  }
+}

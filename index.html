@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wilfried — Applied Mathematics × Software Engineering</title>
+<meta name="description" content="Portfolio de Wilfried — Mathématiques Appliquées et Génie Logiciel. Je transforme les modèles mathématiques en solutions logicielles intelligentes.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tabler-icons/2.44.0/tabler-icons.min.css">
+
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/nav.css">
+<link rel="stylesheet" href="css/hero.css">
+<link rel="stylesheet" href="css/stats.css">
+<link rel="stylesheet" href="css/chatbot.css">
+</head>
+<body>
+
+<div class="glow-orb"></div>
+
+<nav>
+  <div class="logo">WILFRIED</div>
+
+  <ul class="nav-links">
+    <li><a href="index.html" class="active">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li class="dropdown">
+      <a href="playground/index.html">Playground ▾</a>
+      <div class="dropdown-menu">
+        <a href="playground/math-code.html">Math × Code</a>
+        <a href="playground/ai-lab.html">AI Lab</a>
+        <a href="playground/data-lab.html">Data Lab</a>
+      </div>
+    </li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+
+  <button class="hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="container">
+  <section class="hero">
+    <canvas id="neural-bg"></canvas>
+
+    <div class="hero-content">
+      <h1>Noussa Koumbo Wilfried<br><span class="accent">Applied Mathematics</span> × Software Engineering</h1>
+
+      <p class="subtitle">
+        <span id="typewriter-text"></span><span class="typewriter-cursor">&nbsp;</span>
+      </p>
+      <noscript>
+        <p class="subtitle">
+          Je fais deux Masters en même temps — Mathématiques Appliquées et Génie Logiciel —
+          et j'aime transformer les modèles mathématiques en applications qui marchent vraiment.
+        </p>
+      </noscript>
+
+      <div class="tags">
+        <span class="tag">🎓 Double Master</span>
+        <span class="tag">🧮 Mathématiques Appliquées</span>
+        <span class="tag">💻 Génie Logiciel</span>
+        <span class="tag">🤖 Machine Learning</span>
+        <span class="tag">📊 Data / Statistiques</span>
+      </div>
+
+      <div class="cta-group">
+        <a href="playground/index.html" class="btn btn-primary">Explorer le Playground</a>
+        <a href="projects.html" class="btn btn-secondary">Voir mes projets</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="stats-section">
+    <div class="stats-grid">
+      <div class="stat-item reveal-on-scroll">
+        <span class="stat-number" data-target="2">0</span>
+        <span class="stat-label">Masters en parallèle</span>
+      </div>
+      <div class="stat-item reveal-on-scroll">
+        <span class="stat-number" data-target="2">0</span>
+        <span class="stat-label">Projets freelance</span>
+      </div>
+      <div class="stat-item reveal-on-scroll">
+        <span class="stat-number" data-target="3">0</span>
+        <span class="stat-label">Modules Playground</span>
+      </div>
+      <div class="stat-item reveal-on-scroll">
+        <span class="stat-number" data-target="20" data-suffix="+">0</span>
+        <span class="stat-label">Technologies maîtrisées</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="preview-section">
+    <h2>AI Mathematical Playground</h2>
+    <p style="max-width: 600px; margin-top: 12px;">
+      Une expérience interactive où tu peux choisir un problème mathématique,
+      ajuster les paramètres, et voir un algorithme le résoudre en direct.
+    </p>
+
+    <div class="preview-grid">
+      <a href="playground/math-code.html" class="preview-card reveal-on-scroll">
+        <i class="ti ti-math-function"></i>
+        <h3>Math × Code</h3>
+        <p>Visualise des modèles mathématiques et manipule leurs paramètres en temps réel.</p>
+      </a>
+
+      <a href="playground/ai-lab.html" class="preview-card reveal-on-scroll">
+        <i class="ti ti-robot"></i>
+        <h3>AI Lab</h3>
+        <p>Lance des algorithmes de Machine Learning et observe leurs prédictions.</p>
+      </a>
+
+      <a href="playground/data-lab.html" class="preview-card reveal-on-scroll">
+        <i class="ti ti-chart-histogram"></i>
+        <h3>Data Lab</h3>
+        <p>Explore des jeux de données et découvre les tendances qu'ils cachent.</p>
+      </a>
+    </div>
+  </section>
+</div>
+
+<script src="js/main.js"></script>
+<script src="js/animations.js"></script>
+<script src="js/neural-bg.js"></script>
+<script src="js/chatbot.js"></script>
+</body>
+</html>

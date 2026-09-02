@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Noussa Koumbo Wilfried</title>
+<meta name="description" content="Contacte Wilfried pour toute opportunité en Machine Learning, Data Science ou développement logiciel.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tabler-icons/2.44.0/tabler-icons.min.css">
+
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/nav.css">
+<link rel="stylesheet" href="css/about.css">
+<link rel="stylesheet" href="css/contact.css">
+<link rel="stylesheet" href="css/chatbot.css">
+</head>
+<body>
+
+<nav>
+  <div class="logo">WILFRIED</div>
+
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li class="dropdown">
+      <a href="playground/index.html">Playground ▾</a>
+      <div class="dropdown-menu">
+        <a href="playground/math-code.html">Math × Code</a>
+        <a href="playground/ai-lab.html">AI Lab</a>
+        <a href="playground/data-lab.html">Data Lab</a>
+      </div>
+    </li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="contact.html" class="active">Contact</a></li>
+  </ul>
+
+  <button class="hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="container">
+
+  <header class="page-header">
+    <span class="eyebrow">&gt; get_in_touch</span>
+    <h1>Contact</h1>
+  </header>
+
+  <div class="contact-layout">
+    <div class="contact-info">
+      <p>
+        Une opportunité en Machine Learning, Data Science, ou un projet qui mélange
+        maths et logiciel ? Écris-moi, je réponds rapidement.
+      </p>
+
+      <a href="mailto:wilfriednoussa8@gmail.com" class="contact-item">
+        <i class="ti ti-mail"></i>
+        <div>
+          <span class="contact-label">EMAIL</span>
+          <span class="contact-value">wilfriednoussa8@gmail.com</span>
+        </div>
+      </a>
+
+      <a href="tel:+237654391315" class="contact-item">
+        <i class="ti ti-phone"></i>
+        <div>
+          <span class="contact-label">TÉLÉPHONE</span>
+          <span class="contact-value">+237 654 391 315</span>
+        </div>
+      </a>
+
+      <a href="https://www.linkedin.com/in/wilfried-noussa-398785409" target="_blank" rel="noopener" class="contact-item">
+        <i class="ti ti-brand-linkedin"></i>
+        <div>
+          <span class="contact-label">LINKEDIN</span>
+          <span class="contact-value">Wilfried Noussa</span>
+        </div>
+      </a>
+    </div>
+
+    <form class="contact-form" id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+      <div class="form-group">
+        <label for="name">Nom</label>
+        <input type="text" id="name" name="name" required placeholder="Ton nom">
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required placeholder="ton.email@exemple.com">
+      </div>
+
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" required placeholder="Décris ton projet ou ton opportunité..."></textarea>
+      </div>
+
+      <button type="submit" class="btn btn-primary submit-btn" id="submit-btn">Envoyer le message</button>
+
+      <div class="form-status" id="form-status"></div>
+    </form>
+  </div>
+
+</div>
+
+<script src="js/main.js"></script>
+<script src="js/contact.js"></script>
+<script src="js/chatbot.js"></script>
+</body>
+</html>

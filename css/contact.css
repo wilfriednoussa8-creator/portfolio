@@ -1,0 +1,132 @@
+/* ============================================
+   CONTACT PAGE
+   ============================================ */
+.contact-layout {
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  gap: 48px;
+  padding: 20px 0 100px;
+  align-items: start;
+}
+
+.contact-info {
+  padding-top: 8px;
+}
+
+.contact-info p {
+  margin-bottom: 32px;
+  max-width: 380px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 20px;
+  padding: 14px 16px;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  transition: all 0.2s ease;
+}
+
+.contact-item:hover {
+  border-color: var(--border-strong);
+  transform: translateX(4px);
+}
+
+.contact-item i {
+  font-size: 20px;
+  color: var(--cyan);
+  flex-shrink: 0;
+}
+
+.contact-item .contact-label {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--text-secondary);
+  display: block;
+  margin-bottom: 2px;
+}
+
+.contact-item .contact-value {
+  font-size: 14px;
+  color: var(--text-primary);
+}
+
+.contact-form {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 32px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--text-secondary);
+  display: block;
+  margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  background: var(--bg-main);
+  border: 1px solid var(--border);
+  color: var(--text-primary);
+  padding: 12px 14px;
+  border-radius: 8px;
+  font-family: var(--font-body);
+  font-size: 14px;
+  transition: border-color 0.2s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--cyan);
+}
+
+.form-group textarea {
+  min-height: 140px;
+  resize: vertical;
+}
+
+.form-status {
+  margin-top: 16px;
+  font-family: var(--font-mono);
+  font-size: 13px;
+  display: none;
+}
+
+.form-status.success {
+  color: var(--green);
+  display: block;
+}
+
+.form-status.error {
+  color: #EF4444;
+  display: block;
+}
+
+.submit-btn {
+  width: 100%;
+  border: none;
+  font-family: var(--font-heading);
+}
+
+.submit-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+@media (max-width: 900px) {
+  .contact-layout {
+    grid-template-columns: 1fr;
+  }
+}

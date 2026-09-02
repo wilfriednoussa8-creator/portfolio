@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data Lab — Playground</title>
+<meta name="description" content="Explore des distributions statistiques (normale, uniforme, exponentielle) et observe leurs propriétés en temps réel.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tabler-icons/2.44.0/tabler-icons.min.css">
+
+<link rel="stylesheet" href="../css/main.css">
+<link rel="stylesheet" href="../css/nav.css">
+<link rel="stylesheet" href="../css/playground.css">
+<link rel="stylesheet" href="../css/chatbot.css">
+</head>
+<body>
+
+<nav>
+  <div class="logo">WILFRIED</div>
+
+  <ul class="nav-links">
+    <li><a href="../index.html">Home</a></li>
+    <li><a href="../about.html">About</a></li>
+    <li class="dropdown open">
+      <a href="index.html" class="active">Playground ▾</a>
+      <div class="dropdown-menu">
+        <a href="math-code.html">Math × Code</a>
+        <a href="ai-lab.html">AI Lab</a>
+        <a href="data-lab.html" class="active">Data Lab</a>
+      </div>
+    </li>
+    <li><a href="../projects.html">Projects</a></li>
+    <li><a href="../contact.html">Contact</a></li>
+  </ul>
+
+  <button class="hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="container">
+
+  <header class="module-header">
+    <span class="eyebrow">&gt; playground / data_lab</span>
+    <h1>Data Lab — Distributions statistiques</h1>
+    <p>
+      Choisis une loi de distribution, ajuste ses paramètres, et génère un échantillon aléatoire.
+      L'histogramme et les statistiques descriptives (moyenne, médiane, écart-type) se recalculent
+      en direct à partir des données générées.
+    </p>
+  </header>
+
+  <div class="playground-layout">
+    <aside class="controls-panel">
+      <h3>&gt; distribution</h3>
+
+      <div class="control-group">
+        <label for="dist-select">Loi de probabilité</label>
+        <select id="dist-select">
+          <option value="normal">Normale (Gaussienne)</option>
+          <option value="uniform">Uniforme</option>
+          <option value="exponential">Exponentielle</option>
+        </select>
+      </div>
+
+      <div class="control-group">
+        <label for="sample-size">Taille d'échantillon <span class="value" id="sample-size-value">500</span></label>
+        <input type="range" id="sample-size" min="50" max="2000" step="50" value="500">
+      </div>
+
+      <div class="control-group">
+        <label for="param-1"><span id="param-1-label">Moyenne (μ)</span> <span class="value" id="param-1-value">0.0</span></label>
+        <input type="range" id="param-1" min="-10" max="10" step="0.1" value="0">
+      </div>
+
+      <div class="control-group">
+        <label for="param-2"><span id="param-2-label">Écart-type (σ)</span> <span class="value" id="param-2-value">1.0</span></label>
+        <input type="range" id="param-2" min="0.1" max="5" step="0.1" value="1">
+      </div>
+
+      <div class="control-buttons">
+        <button class="btn btn-primary" id="generate-btn" style="flex: 1;">Générer un échantillon</button>
+      </div>
+
+      <div class="stats-grid">
+        <div class="stat-box">
+          <span class="stat-label">Moyenne</span>
+          <span class="stat-value" id="stat-mean">—</span>
+        </div>
+        <div class="stat-box">
+          <span class="stat-label">Médiane</span>
+          <span class="stat-value" id="stat-median">—</span>
+        </div>
+        <div class="stat-box">
+          <span class="stat-label">Écart-type</span>
+          <span class="stat-value" id="stat-std">—</span>
+        </div>
+      </div>
+    </aside>
+
+    <main class="visualization-panel">
+      <canvas id="data-canvas"></canvas>
+      <div class="result-line" id="result-line">&gt; en attente de données...</div>
+    </main>
+  </div>
+
+</div>
+
+<script src="../js/main.js"></script>
+<script src="../js/data-lab.js"></script>
+<script src="../js/chatbot.js"></script>
+</body>
+</html>

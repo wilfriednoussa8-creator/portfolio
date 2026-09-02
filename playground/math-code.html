@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Math × Code — Playground</title>
+<meta name="description" content="Visualise des fonctions mathématiques et ajuste leurs paramètres en temps réel.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tabler-icons/2.44.0/tabler-icons.min.css">
+
+<link rel="stylesheet" href="../css/main.css">
+<link rel="stylesheet" href="../css/nav.css">
+<link rel="stylesheet" href="../css/playground.css">
+<link rel="stylesheet" href="../css/chatbot.css">
+</head>
+<body>
+
+<nav>
+  <div class="logo">WILFRIED</div>
+
+  <ul class="nav-links">
+    <li><a href="../index.html">Home</a></li>
+    <li><a href="../about.html">About</a></li>
+    <li class="dropdown open">
+      <a href="index.html" class="active">Playground ▾</a>
+      <div class="dropdown-menu">
+        <a href="math-code.html" class="active">Math × Code</a>
+        <a href="ai-lab.html">AI Lab</a>
+        <a href="data-lab.html">Data Lab</a>
+      </div>
+    </li>
+    <li><a href="../projects.html">Projects</a></li>
+    <li><a href="../contact.html">Contact</a></li>
+  </ul>
+
+  <button class="hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="container">
+
+  <header class="module-header">
+    <span class="eyebrow">&gt; playground / math_x_code</span>
+    <h1>Math × Code</h1>
+    <p>Choisis une fonction, ajuste ses paramètres avec les curseurs, et regarde la courbe se redessiner en direct.</p>
+  </header>
+
+  <div class="playground-layout">
+    <aside class="controls-panel">
+      <h3>&gt; parameters</h3>
+
+      <div class="control-group">
+        <label for="function-select">Fonction</label>
+        <select id="function-select">
+          <option value="quadratic">Quadratique — ax² + bx + c</option>
+          <option value="sine">Sinusoïde — a·sin(bx + c)</option>
+          <option value="exponential">Exponentielle — a·e^(bx)</option>
+        </select>
+      </div>
+
+      <div class="control-group">
+        <label for="param-a">a <span class="value" id="value-a">1.0</span></label>
+        <input type="range" id="param-a" min="-5" max="5" step="0.1" value="1">
+      </div>
+
+      <div class="control-group">
+        <label for="param-b">b <span class="value" id="value-b">1.0</span></label>
+        <input type="range" id="param-b" min="-5" max="5" step="0.1" value="1">
+      </div>
+
+      <div class="control-group">
+        <label for="param-c">c <span class="value" id="value-c">0.0</span></label>
+        <input type="range" id="param-c" min="-5" max="5" step="0.1" value="0">
+      </div>
+    </aside>
+
+    <main class="visualization-panel">
+      <canvas id="math-canvas"></canvas>
+      <div class="result-line" id="result-line">&gt; f(x) = ...</div>
+    </main>
+  </div>
+
+</div>
+
+<script src="../js/main.js"></script>
+<script src="../js/math-code.js"></script>
+<script src="../js/chatbot.js"></script>
+</body>
+</html>

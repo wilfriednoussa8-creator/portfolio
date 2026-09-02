@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Playground — Noussa Koumbo Wilfried</title>
+<meta name="description" content="AI Mathematical Playground : explore des modèles mathématiques et algorithmes de Machine Learning en direct.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tabler-icons/2.44.0/tabler-icons.min.css">
+
+<link rel="stylesheet" href="../css/main.css">
+<link rel="stylesheet" href="../css/nav.css">
+<link rel="stylesheet" href="../css/playground.css">
+<link rel="stylesheet" href="../css/chatbot.css">
+</head>
+<body>
+
+<nav>
+  <div class="logo">WILFRIED</div>
+
+  <ul class="nav-links">
+    <li><a href="../index.html">Home</a></li>
+    <li><a href="../about.html">About</a></li>
+    <li class="dropdown">
+      <a href="index.html" class="active">Playground ▾</a>
+      <div class="dropdown-menu">
+        <a href="math-code.html">Math × Code</a>
+        <a href="ai-lab.html">AI Lab</a>
+        <a href="data-lab.html">Data Lab</a>
+      </div>
+    </li>
+    <li><a href="../projects.html">Projects</a></li>
+    <li><a href="../contact.html">Contact</a></li>
+  </ul>
+
+  <button class="hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="container">
+
+  <section class="playground-hero">
+    <span class="eyebrow">&gt; ai_mathematical_playground</span>
+    <h1>Le Playground</h1>
+    <p>
+      Choisis un problème, ajuste les paramètres, et regarde un algorithme le résoudre en direct.
+      Chaque module illustre une facette différente de ce que je fais : des mathématiques pures
+      jusqu'à leur application concrète en Machine Learning et en analyse de données.
+    </p>
+  </section>
+
+  <div class="module-grid">
+    <a href="math-code.html" class="module-card">
+      <i class="ti ti-math-function"></i>
+      <span class="tag-mini">Modèles mathématiques</span>
+      <h3>Math × Code</h3>
+      <p>Visualise des fonctions et modèles mathématiques (régression, distributions) et manipule leurs paramètres en temps réel.</p>
+      <span class="module-link">Explorer <i class="ti ti-arrow-right"></i></span>
+    </a>
+
+    <a href="ai-lab.html" class="module-card">
+      <i class="ti ti-robot"></i>
+      <span class="tag-mini">Machine Learning</span>
+      <h3>AI Lab</h3>
+      <p>Lance un algorithme de Machine Learning sur un jeu de données et observe ses prédictions évoluer selon les paramètres.</p>
+      <span class="module-link">Explorer <i class="ti ti-arrow-right"></i></span>
+    </a>
+
+    <a href="data-lab.html" class="module-card">
+      <i class="ti ti-chart-histogram"></i>
+      <span class="tag-mini">Analyse de données</span>
+      <h3>Data Lab</h3>
+      <p>Explore un jeu de données, visualise sa distribution et découvre les tendances statistiques qu'il contient.</p>
+      <span class="module-link">Explorer <i class="ti ti-arrow-right"></i></span>
+    </a>
+  </div>
+
+</div>
+
+<script src="../js/main.js"></script>
+<script src="../js/chatbot.js"></script>
+</body>
+</html>
