@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Page d'accueil -->
+  <url>
+    <loc>https://noussa-koumbo-wilfried.vercel.app/</loc>
+    <lastmod>2026-09-14</lastmod>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Pages principales -->
+  <url>
+    <loc>https://noussa-koumbo-wilfried.vercel.app/about.html</loc>
+    <lastmod>2026-09-14</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://noussa-koumbo-wilfried.vercel.app/projects.html</loc>
+    <lastmod>2026-09-14</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://noussa-koumbo-wilfried.vercel.app/contact.html</loc>
+    <lastmod>2026-09-14</lastmod>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Pages du dossier playground -->
+  <url>
+    <loc>https://noussa-koumbo-wilfried.vercel.app/playground/index.html</loc>
+    <lastmod>2026-09-14</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://noussa-koumbo-wilfried.vercel.app/playground/ai-lab.html</loc>
+    <lastmod>2026-09-14</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://noussa-koumbo-wilfried.vercel.app/playground/data-lab.html</loc>
+    <lastmod>2026-09-14</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://noussa-koumbo-wilfried.vercel.app/playground/math-code.html</loc>
+    <lastmod>2026-09-14</lastmod>
+    <priority>0.6</priority>
+  </url>
+</urlset>
